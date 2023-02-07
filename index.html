@@ -1,7 +1,70 @@
 <!DOCTYPE html>
-<html>
-<body>
-	<h1>Hello World</h1>
-	<p>I'm hosted with GitHub Pages.</p>
-</body>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet" />
+		<title>Siri's Portfolio</title>
+		<style>
+			* {
+				margin: 0px;
+				padding: 0px;
+				box-sizing: border-box;
+				font-family: "Montserrat", sans-serif;
+			}
+			.topnav {
+				background-color: darkslategray;
+				height: 75px;
+				width: auto;
+				display: flex;
+				justify-content: space-around;
+				text-shadow: 1px 1px #000000;
+			}
+			.icon {
+				position: absolute;
+				height: 60px;
+				left: 5px;
+				top: 5px;
+			}
+			.nav-links {
+				display: flex;
+				width: auto;
+				letter-spacing: 3px;
+				font-size: 30px;
+				list-style: none;
+			}
+			.nav-links li, a {
+				color: crimson;
+				top: 2px;
+				text-decoration: none;
+				margin-top: 2px;
+				margin-bottom: 2px;
+				padding: 10px 60px;
+				transition: all 250ms ease-in-out;
+			}
+			.nav-links a:hover {
+				color: darkred;
+			}
+			.nav-links .active {
+				color: chartreuse;
+			}
+			.nav-links .active:hover {
+				color: darkgoldenrod;
+			}
+		</style>
+	</head>
+	<body bgcolor="gray">
+		<!-- <h1>Hello World</h1>
+		<p>I'm hosted with GitHub Pages.</p> -->
+
+		<div class="topnav">
+			<img class="icon" src="https://avatars.githubusercontent.com/u/99063193?v=4">
+			<ul class="nav-links">
+				<li><a class="active" href="#">Home</a></li>
+				<li><a href="#">Projects</a></li>
+				<li><a href="#">Achievements</a></li>
+				<li><a href="#">Contact</a></li>
+			</ul>
+		</div>
+	</body>
 </html>
