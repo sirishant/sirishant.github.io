@@ -12,6 +12,10 @@
 				box-sizing: border-box;
 				font-family: "Montserrat", sans-serif;
 			}
+			.body {
+				background: linear-gradient(darkslategrey, white);
+				height: 1000px;
+			}
 			.topnav {
 				background-color: darkslategray;
 				height: 75px;
@@ -22,15 +26,24 @@
 			}
 			.icon {
 				position: absolute;
-				height: 60px;
-				left: 5px;
-				top: 5px;
+				height: 50px;
+				left: 15px;
+				top: 10px;
+			}
+			.heading {
+				font-size: 25px;
+				text-transform: lowercase;
+				position: absolute;
+				left: 75px;
+				top: 17px;
+				color: orange;
+				user-select: none;
 			}
 			.nav-links {
 				display: flex;
-				width: auto;
+				width: 40%;
 				letter-spacing: 3px;
-				font-size: 30px;
+				font-size: 28px;
 				list-style: none;
 			}
 			.nav-links li, a {
@@ -39,7 +52,8 @@
 				text-decoration: none;
 				margin-top: 2px;
 				margin-bottom: 2px;
-				padding: 10px 60px;
+				/*padding: 10px 60px;*/
+				padding: 10px 20px;
 				transition: all 250ms ease-in-out;
 			}
 			.nav-links a:hover {
@@ -51,20 +65,55 @@
 			.nav-links .active:hover {
 				color: darkgoldenrod;
 			}
+			.pane {
+				display: inline-block;
+				margin: 3%;
+				width: auto;
+				box-shadow: 5px 10px rgba(0, 0, 0, 0.498);
+			}
+			.content .text {
+				display: inline-block;
+				vertical-align: top;
+				margin: 6% 0%;
+				font-size: x-large;
+				width: 70%;
+			}
 		</style>
 	</head>
-	<body bgcolor="gray">
-		<!-- <h1>Hello World</h1>
-		<p>I'm hosted with GitHub Pages.</p> -->
+	<body>
+		<div class="body">
+			<!-- <h1>Hello World</h1>
+			<p>I'm hosted with GitHub Pages.</p> -->
 
-		<div class="topnav">
-			<img class="icon" src="https://avatars.githubusercontent.com/u/99063193?v=4">
-			<ul class="nav-links">
-				<li><a class="active" href="#">Home</a></li>
-				<li><a href="#">Projects</a></li>
-				<li><a href="#">Achievements</a></li>
-				<li><a href="#">Contact</a></li>
-			</ul>
+			<div class="topnav">
+				<div class="heading">
+					<h4>sirishant</h4>
+				</div>
+				<img class="icon" src="https://avatars.githubusercontent.com/u/99063193?v=4">
+				<ul class="nav-links">
+					<li><a class="active" href="#">Home</a></li>
+					<li><a href="#">Projects</a></li>
+					<li><a href="#">Achievements</a></li>
+					<li><a href="#">Contact</a></li>
+				</ul>
+			</div>
+
+			<div class="content">
+				<div class="pane">
+					<img src="src/PXL_20210509_204711614.NIGHT_3.jpg" style="height: 400px;">
+				</div>
+				<div class="text">
+					<h3>Hello and welcome to my HTML/CSS website!
+						<br><br>
+						This website contains a few pages outlining various projects and achievements that I have accumulated over the years.
+						<br>
+						A few of these achievements may or may not be included to extend the text coverage of a page, since there isn't much to 
+						write and I need to add as much content as possible to take away attention from the actual design of the website :p
+						<br><br>
+						On this main page, you'll find some of my personal interests and other random stuff.
+					</h3>
+				</div>
+			</div>
 		</div>
 	</body>
 </html>
