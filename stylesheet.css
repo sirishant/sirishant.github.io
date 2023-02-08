@@ -82,8 +82,6 @@
     display: inline-block;
     margin: 3%;
     width: auto;
-    box-shadow: 5px 10px rgba(0, 0, 0, 0.498);
-    
     animation-duration: 1s;
     animation-name: slidein;
 }
@@ -91,34 +89,42 @@
     color: #DEDEDE;
     display: inline-block;
     vertical-align: top;
-    margin: 4% 0%;
+    margin: 3% 0%;
     font-size: x-large;
     width: 70%;
 }
 .interests {
-    border-bottom: 3px solid #949494;
     margin-top: 3%;
-    margin-bottom: 5%;
+    margin-bottom: 3%;
     justify-content: space-around;
     width: 100%;
 }
 .interests .header {
-    height: 55px;
-    background-color: #2A2B2D;
+    /*position: sticky;
+    top: 75px;*/
+    margin: 0 auto;
+    width: 500px;
+    border-top: 3px solid rgb(37, 28, 28);
+    border-bottom: 3px solid rgb(37, 28, 28);
+    height: 60px;
+    line-height: 60px;
+    background-color: #feda6a;
     text-align: center;
     text-transform: uppercase;
-    color: #58B8EE;
+    color: #1d1e22;
     letter-spacing: 15px;
     font-size: x-large;
     margin-bottom: 5%;
-    line-height: 55px;
-    text-shadow: 1px 1px #ffffff;
+    text-shadow: 2px 2px #000000;
+    z-index: 50;
+    padding: 0px 5px;
+    border-radius: 20px;
 }
 .interests .heading {
     text-align: center;
     text-transform: uppercase;
     margin-top: 7px;
-    letter-spacing: 5px;
+    letter-spacing: 4px;
     color: antiquewhite;
     margin-bottom: 5%;
     border-top: 3px solid #949494;
@@ -127,27 +133,30 @@
     margin-bottom: 5%;
     justify-content: space-around;
     width: 100%;
+    padding: 8px;
 }
 .interests-items {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    margin: 1%;
     justify-content: space-around;
     z-index: 50;
-    margin-bottom: 15px;
     width: 100%;
     overflow: visible;
 }
 .interests-items .col {
+    padding: 5px;
     text-align: center;
     display: inline-block;
-    width: 600px;
+    width: 500px;
     margin: 10px;
+    margin-bottom: 5%;
     margin-right: 15px;
     justify-content: center;
     transition-property: transform;
     transition-duration: 300ms;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    height: 550px;
 }
 .interests-items .col:hover {
     transform: scale(1.3);
@@ -158,8 +167,19 @@
     height: 210px;
     filter: brightness(.8) contrast(1.2);
     width: 100%;
-    margin-bottom: 10px;
+    margin-bottom: 7%;
+    margin-top: 8%;
 }
 .interests-items .text {
     text-align: center;
+}
+.about {
+    border-top: 5px solid rgba(0, 0, 0, 0.2);
+    background-color: #11435E;
+    height: 300px;
+}
+.about .text {
+    color: #A0D2EB;
+    margin: 2%;
+    width: 95%;
 }
