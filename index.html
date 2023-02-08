@@ -2,89 +2,18 @@
 <html lang="en">
 	<head>
 		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+		<link href="stylesheet.css" rel="stylesheet">
 		<title>Siri's Portfolio</title>
-		<style>
-			* {
-				margin: 0px;
-				padding: 0px;
-				box-sizing: border-box;
-				font-family: "Montserrat", sans-serif;
-			}
-			.body {
-				background: linear-gradient(darkslategrey, white);
-				height: 1000px;
-			}
-			.topnav {
-				background-color: darkslategray;
-				height: 75px;
-				width: auto;
-				display: flex;
-				justify-content: space-around;
-				text-shadow: 1px 1px #000000;
-			}
-			.icon {
-				position: absolute;
-				height: 50px;
-				left: 15px;
-				top: 10px;
-			}
-			.heading {
-				font-size: 25px;
-				text-transform: lowercase;
-				position: absolute;
-				left: 75px;
-				top: 17px;
-				color: orange;
-				user-select: none;
-			}
-			.nav-links {
-				display: flex;
-				width: 40%;
-				letter-spacing: 3px;
-				font-size: 28px;
-				list-style: none;
-			}
-			.nav-links li, a {
-				color: crimson;
-				top: 2px;
-				text-decoration: none;
-				margin-top: 2px;
-				margin-bottom: 2px;
-				/*padding: 10px 60px;*/
-				padding: 10px 20px;
-				transition: all 250ms ease-in-out;
-			}
-			.nav-links a:hover {
-				color: darkred;
-			}
-			.nav-links .active {
-				color: chartreuse;
-			}
-			.nav-links .active:hover {
-				color: darkgoldenrod;
-			}
-			.pane {
-				display: inline-block;
-				margin: 3%;
-				width: auto;
-				box-shadow: 5px 10px rgba(0, 0, 0, 0.498);
-			}
-			.content .text {
-				display: inline-block;
-				vertical-align: top;
-				margin: 6% 0%;
-				font-size: x-large;
-				width: 70%;
-			}
-		</style>
+		<script>
+			
+		</script>
 	</head>
 	<body>
-		<div class="body">
-			<!-- <h1>Hello World</h1>
-			<p>I'm hosted with GitHub Pages.</p> -->
-
+		<!-- <h1>Hello World</h1>
+		<p>I'm hosted with GitHub Pages.</p> -->
+		<div class="navbar">
 			<div class="topnav">
 				<div class="heading">
 					<h4>sirishant</h4>
@@ -97,21 +26,112 @@
 					<li><a href="#">Contact</a></li>
 				</ul>
 			</div>
-
-			<div class="content">
-				<div class="pane">
-					<img src="src/PXL_20210509_204711614.NIGHT_3.jpg" style="height: 400px;">
+		</div>
+		<div class="content">
+			<div class="pane" id="pane">
+				<img src="src/portrait.jpg" style="height: 400px; filter: brightness(.8) contrast(1.2);" alt="Srishant Baliga">
+			</div>
+			<div class="text">
+				<h3>Hello and welcome to my HTML/CSS website!
+					<br><br>
+					This website contains a few pages outlining various projects and achievements that I have accumulated over the years.
+					<br>
+					A few of these achievements may or may not be included to extend the text coverage of a page, since there isn't much to 
+					write and I need to add as much content as possible to take away attention from the actual design of the website :p
+					<br><br>
+					On this main page, you'll find some of my interests and other random stuff.
+					<br><br>
+					<div style="text-align: end;">~ Srishant Baliga</div>
+				</h3>
+			</div>
+			<div class="interests">
+				<div class="header">
+					<h2>
+						Interests
+					</h2>
 				</div>
-				<div class="text">
-					<h3>Hello and welcome to my HTML/CSS website!
-						<br><br>
-						This website contains a few pages outlining various projects and achievements that I have accumulated over the years.
+				<div class="interests-items">
+					<div class="col">
+						<div class="img">
+							<img src="https://img.theweek.in/content/dam/week/news/sports/images/2021/12/13/hamilton-verstappen-formula-one-abu-dhabi-f1-twitter.jpg" height="250px" width="450px" alt="Formula 1">	
+						</div>
 						<br>
-						A few of these achievements may or may not be included to extend the text coverage of a page, since there isn't much to 
-						write and I need to add as much content as possible to take away attention from the actual design of the website :p
-						<br><br>
-						On this main page, you'll find some of my personal interests and other random stuff.
-					</h3>
+						<div class="text">
+							<div class="heading">
+								<h4>
+									Formula 1
+								</h4>
+							</div>
+							<h5>
+								Formula One is the pinnacle of motorsport. The battles within the circuit are almost as interesting as the complex machinery involved.
+							</h5>
+						</div>
+					</div>
+					<div class="col">
+						<div class="img">
+							<img src="https://freepngimg.com/thumb/categories/745.png" alt="Technology" height="250px">
+						</div>
+						<br>
+						<div class="text">
+							<div class="heading">
+								<h4>
+									Technology
+								</h4>
+							</div>
+							<h5>
+								A love for technology led to pursuit of a career in Computer Science and Engineering.
+							</h5>
+						</div>
+					</div>
+					
+					<div class="col">
+						<div class="img">
+							<img src="src/driving.jpg" height="250px" width="425px" alt="Driving and Travelling">
+						</div>
+						<br>
+						<div class="text">
+							<div class="heading">
+								<h4>
+									Driving / Travelling
+								</h4>
+							</div>
+							<h5>
+								Going out on long drives with friends, looking at the beauty of nature whlist conversing and having fun <3
+							</h5>
+						</div>
+					</div>
+					<div class="col">
+						<div class="img">
+							<img src="src/photography.jpg" alt="Photography" height="250px" width="425px" style="object-fit: cover;">
+						</div>
+						<br>
+						<div class="text">
+							<div class="heading">
+								<h4>
+									Photography
+								</h4>
+							</div>
+							<h5>
+								The art of capturing the moment. It fits in well with the driving and travelling ;)
+							</h5>
+						</div>
+					</div>
+					<div class="col">
+						<div class="img">
+							<img src="src/motorsports.jpg" alt="Photography" height="250px" width="425px" style="object-fit: cover;">
+						</div>
+						<br>
+						<div class="text">
+							<div class="heading">
+								<h4>
+									Motorsports
+								</h4>
+							</div>
+							<h5>
+								Apart from F1, other motorsports are also intriguing and good to watch!
+							</h5>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
