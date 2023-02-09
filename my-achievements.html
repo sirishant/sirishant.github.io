@@ -5,30 +5,123 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
 		<link href="stylesheet.css" rel="stylesheet">
-		<title>Siri's Portfolio</title>
+		<title>Siri's "Achievements"</title>
 		<script>
-			
+			function expandMenu() {
+  				var x = document.getElementById("myTopnav");
+  				if (x.className === "topnav") {
+    				x.className += " responsive";
+  				} else {
+				    x.className = "topnav";
+  				}
+			}
 		</script>
 	</head>
 	<body>
 		<!-- <h1>Hello World</h1>
 		<p>I'm hosted with GitHub Pages.</p> -->
 		<div class="navbar">
-			<div class="topnav">
+			<div class="topnav" id="myTopnav">
 				<div class="heading">
 					<h4>sirishant</h4>
 				</div>
-				<img class="icon" src="https://avatars.githubusercontent.com/u/99063193?v=4">
+				<img class="icon" src="./src/github.png">
 				<ul class="nav-links">
 					<li><a class="active" href="./index.html">Home</a></li>
 					<li><a href="./my-projects.html">Projects</a></li>
 					<li><a href="./my-achievements.html">Achievements</a></li>
 					<li><a href="./contact-me.html">Contact</a></li>
+					<a href="javascript:void(0);" onclick="expandMenu()" class="ham-menu">
+						<img src="https://icon-library.com/images/hamburger-menu-icon-png-white/hamburger-menu-icon-png-white-10.jpg" alt="Menu" height="50px">
+					</a>
 				</ul>
 			</div>
 		</div>
-		<div class="content">
-			<h3>Under construction..</h3>
+		<div class="page-header">
+			<h1 style="max-width: 100%; overflow: hidden;">
+				My Achievements
+			</h1>
+		</div>
+		<div class="content" style="top: 450px;">
+			<div class="interests-items projects-items">
+				<div class="col" style="max-width: 75%;">
+					<div class="img">
+						<img src="./src/tic-tac-toe.png" width="75%" height="500px" style="object-fit: scale-down;" alt="Tic-Tac-Toe">	
+					</div>
+					<br>
+					<div class="text">
+						<div class="heading">
+							<h4>
+								Tic-Tac-Toe C++ Program
+							</h4>
+						</div>
+						<h5>
+							Created using C++, implementing concepts such as functions linked with external header files, strings, vectors, conditional operators, loops etc.
+							<br><br>
+							It also contains exit parameters for various foul-plays or incorrect inputs. Returns a draw game by default or checks for a winning move after each input.
+						</h5>
+					</div>
+				</div>
+				<div class="col" style="max-width: 75%;">
+					<div class="img">
+						<img src="./src/webpage.png" width="75%" height="500px" style="object-fit: scale-down;" alt="Portfolio Website">	
+					</div>
+					<br>
+					<div class="text">
+						<div class="heading">
+							<h4>
+								Portfolio Website
+							</h4>
+						</div>
+						<h5>
+							Created using HTML and CSS. Implements transitions, pseudo-classes, and an attempt at javascript and media queries.
+							<br><br>
+							I tried making it responsive, but due to lack of time and skills, I abandoned it lol.
+							<br><br>
+							Maybe a future attempt at implementing using Bootstrap can be made? Soon&#8482;
+						</h5>
+					</div>
+				</div>
+				<div class="col" style="max-width: 75%;">
+					<div class="img">
+						<img src="./src/robowars.jpg" width="75%" height="500px" style="object-fit: scale-down;" alt="Robowars">	
+					</div>
+					<br>
+					<div class="text">
+						<div class="heading">
+							<h4>
+								Robowars Battlebot
+							</h4>
+						</div>
+						<h5>
+							I'm a part of Team <b>Noivern</b>, a team creating battlebots and participating in tournaments against other bots.
+							<br><br>
+							We reached the quarterfinals at Techfest, IIT-Bombay.
+							<br><br>
+							Our next iteration will be put to test at Quark, BITS-Goa. Fingers crossed for a great show!
+						</h5>
+					</div>
+				</div>
+			</div>
+			<footer>
+				<div class="about">
+					<div class="text">
+						<h4 style="color: #E5EAF5">About</h4>
+						<br>
+						<h5>
+							This is a website created for the "Web Development" subject for 3rd Semester CSE.
+							<br>
+							It contains a 'portfolio' of me and other random information.
+							<br><br>
+							It demonstrates the usage of HTML and CSS for front-end development and create good-looking websites with minimalism.
+						</h5>
+						<br><br>
+						<div style="justify-content: end; display: flex;">
+							<h6>&#169; 2022 Srishant Baliga</h6>
+						</div>
+					</div>
+				</div>
+			</footer>
 		</div>
 	</body>
 </html>

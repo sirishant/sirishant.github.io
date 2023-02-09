@@ -5,7 +5,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
 		<link href="stylesheet.css" rel="stylesheet">
-		<title>Siri's Portfolio</title>
+		<title>Siri's Socials</title>
 		<script>
 			
 		</script>
@@ -14,21 +14,101 @@
 		<!-- <h1>Hello World</h1>
 		<p>I'm hosted with GitHub Pages.</p> -->
 		<div class="navbar">
-			<div class="topnav">
+			<div class="topnav" id="myTopnav">
 				<div class="heading">
 					<h4>sirishant</h4>
 				</div>
-				<img class="icon" src="https://avatars.githubusercontent.com/u/99063193?v=4">
+				<img class="icon" src="./src/github.png">
 				<ul class="nav-links">
 					<li><a class="active" href="./index.html">Home</a></li>
 					<li><a href="./my-projects.html">Projects</a></li>
 					<li><a href="./my-achievements.html">Achievements</a></li>
 					<li><a href="./contact-me.html">Contact</a></li>
+					<a href="javascript:void(0);" onclick="expandMenu()" class="ham-menu">
+						<img src="https://icon-library.com/images/hamburger-menu-icon-png-white/hamburger-menu-icon-png-white-10.jpg" alt="Menu" height="50px">
+					</a>
 				</ul>
 			</div>
 		</div>
-		<div class="content">
-			<h3>Under construction..</h3>
+		<div class="page-header">
+			<h1 style="max-width: 100%; overflow: hidden;">
+				Contact Me
+			</h1>
+		</div>
+		<div class="content" style="top: 300px;">
+			<div class="socials">
+				<div class="linkedin">
+					<a href="https://www.linkedin.com/in/srishant-baliga-27978023a/">
+						<img src="./src/portrait.jpg" height="400px">
+						<div class="socialmedia">
+							<img src="https://cdn4.iconfinder.com/data/icons/social-messaging-ui-color-shapes-2-free/128/social-linkedin-circle-512.png" height="100px">
+						</div>
+						<div class="text">
+							<h3>
+								LinkedIn
+							</h3>
+						</div>
+					</a>
+				</div>
+				<div class="instagram">
+					<a href="https://www.instagram.com/sirishant/">
+						<img src="./src/insta.JPG" height="400px">
+						<div class="socialmedia">
+							<img src="./src/insta-logo.png" height="100px">
+						</div>
+						<div class="text">
+							<h3>
+								Instagram
+							</h3>
+						</div>
+					</a>
+				</div>
+				<div class="discord">
+					<a href="http://discordapp.com/users/1073267430421434468">
+						<img src="./src/discord.png" height="400px">
+						<div class="socialmedia">
+							<img src="https://logodownload.org/wp-content/uploads/2017/11/discord-logo-1-1.png" height="100px">
+						</div>
+						<div class="text">
+							<h3>
+								Discord
+							</h3>
+						</div>
+					</a>
+				</div>
+				<div class="github">
+					<a href="https://github.com/sirishant">
+						<img src="./src/github.png" height="400px">
+						<div class="socialmedia">
+							<img src="https://image.freepik.com/free-icon/github-logo-silhouette-in-a-square_318-54633.jpg" height="100px">
+						</div>
+						<div class="text">
+							<h3>
+								GitHub
+							</h3>
+						</div>
+					</a>
+				</div>
+			</div>
+			<footer>
+				<div class="about">
+					<div class="text">
+						<h4 style="color: #E5EAF5">About</h4>
+						<br>
+						<h5>
+							This is a website created for the "Web Development" subject for 3rd Semester CSE.
+							<br>
+							It contains a 'portfolio' of me and other random information.
+							<br><br>
+							It demonstrates the usage of HTML and CSS for front-end development and create good-looking websites with minimalism.
+						</h5>
+						<br><br>
+						<div style="justify-content: end; display: flex;">
+							<h6>&#169; 2022 Srishant Baliga</h6>
+						</div>
+					</div>
+				</div>
+			</footer>
 		</div>
 	</body>
 </html>
